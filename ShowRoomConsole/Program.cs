@@ -1,4 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
+using NLog;
+using NLog.Config;
+using NLog.Extensions.Logging;
 using ShowRoomConsole.IO;
 using ShowRoomConsole.Models;
 using ShowRoomTweet;
@@ -27,6 +30,12 @@ namespace ShowRoomConsole
 
             var config = builder.Build();
 
+            // NLogの設定
+            LogManager.Configuration = new NLogLoggingConfiguration(config.GetSection("NLog"));
+
+            // loggerの生成
+            var logger = LogManager.GetCurrentClassLogger();
+
             // Twitterオブジェクトの生成
             var twitter = new Twitter(config["Twitter:ConsumerKey"], config["Twitter:ConsumerSecret"],
                 config["Twitter:AccessToken"], config["Twitter:AccessSecret"]);
@@ -35,7 +44,7 @@ namespace ShowRoomConsole
             var roomIds = CsvReader.ReadRoomIds(@"..\..\..\Data\RoomIds.csv");
 
             // 出力ファイル名
-            var fileName = "followers_" + DateTime.Now.ToString("yyyyMMdd-hhmmss") + ".xml";
+            var fileName = Path.Combine("Output", "followers_" + DateTime.Now.ToString("yyyyMMdd-hhmmss") + ".xml");
 
             var rooms = new List<Room>();
             foreach (var id in roomIds)
@@ -48,6 +57,8 @@ namespace ShowRoomConsole
 
                 // ルームを出力ファイルに追加
                 XmlWriter.Append(Path.Combine(fileName), room);
+
+                logger.Info($"{room.Name} {room.FollowerNum}");
 
                 // コンソールに出力
                 Console.WriteLine($"{room.Name} {room.FollowerNum}");

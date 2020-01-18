@@ -1,0 +1,24 @@
+﻿  "NLog": {
+    "throwConfigExceptions": true,
+    "targets": {
+      "logfile": {
+        "type": "File",
+        "fileName": "Log\\log_${shortdate}.log"
+      },
+      "logconsole": {
+        "type": "Console"
+      }
+    },
+    "rules": [
+      {
+        "logger": "*",
+        "minLevel": "Info",
+        "writeTo": "logconsole"
+      },
+      {
+        "logger": "*",
+        "minLevel": "Debug",
+        "writeTo": "logfile"
+      }
+    ]
+  }
