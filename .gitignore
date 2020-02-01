@@ -9,3 +9,8 @@ ShowRoomTweetTests/obj/
 ShowRoomTweet/bin/
 ShowRoomTweet/obj/
 ShowRoomConsole/appsettings.json
+packages/
+ShowRoomForm/bin/
+ShowRoomForm/obj/
+ShowRoomFormTests/bin/
+ShowRoomFormTests/obj/

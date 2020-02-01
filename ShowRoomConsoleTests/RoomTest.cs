@@ -17,7 +17,7 @@ namespace ShowRoomConsoleTests
             Assert.AreEqual("48_KOJIMA_AIKO", room.URLKey);
             Assert.IsTrue(room.FollowerNum >= 0);
 
-            ShowRoomConsole.IO.XmlWriter.Append("room.xml", room);
+            ShowRoomConsole.IO.XmlWriter.Append(@"Output\room.xml", room);
         }
     }
 }

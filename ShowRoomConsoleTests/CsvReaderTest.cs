@@ -10,7 +10,7 @@ namespace ShowRoomConsoleTests
         [TestMethod]
         public void CSV‚ğ“Ç‚İ‚Ş()
         {
-            var ids = CsvReader.ReadRoomIds(@"..\..\..\Data\TestData.csv").ToArray();
+            var ids = CsvReader.ReadRoomIds(@"Input\TestData.csv").ToArray();
 
             Assert.IsTrue(ids.Count() == 3);
 
@@ -22,7 +22,7 @@ namespace ShowRoomConsoleTests
         [TestMethod]
         public void CSV‚ğ“Ç‚İ‚Ş_ƒtƒ@ƒCƒ‹‚È‚µ()
         {
-            var ids = CsvReader.ReadRoomIds(@"..\..\..\Data\NoTestData.csv").ToArray();
+            var ids = CsvReader.ReadRoomIds(@"Input\NoTestData.csv").ToArray();
 
             Assert.IsTrue(ids.Count() == 0);
         }
@@ -30,7 +30,7 @@ namespace ShowRoomConsoleTests
         [TestMethod]
         public void CSV‚ğ“Ç‚İ‚Ş_Id‚È‚µ()
         {
-            var ids = CsvReader.ReadRoomIds(@"..\..\..\Data\TestData2.csv").ToArray();
+            var ids = CsvReader.ReadRoomIds(@"Input\TestData2.csv").ToArray();
 
             Assert.IsTrue(ids.Count() == 2);
 

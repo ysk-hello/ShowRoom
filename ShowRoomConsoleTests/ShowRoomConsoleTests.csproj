@@ -17,4 +17,13 @@
     <ProjectReference Include="..\ShowRoomConsole\ShowRoomConsole.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Input\TestData.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Input\TestData2.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

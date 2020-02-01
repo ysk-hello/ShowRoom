@@ -41,7 +41,7 @@ namespace ShowRoomConsole
                 config["Twitter:AccessToken"], config["Twitter:AccessSecret"]);
 
             // ルームIdの読み込み
-            var roomIds = CsvReader.ReadRoomIds(@"..\..\..\Data\RoomIds.csv");
+            var roomIds = CsvReader.ReadRoomIds(@"Input\RoomIds.csv");
 
             // 出力ファイル名
             var fileName = Path.Combine("Output", "followers_" + DateTime.Now.ToString("yyyyMMdd-hhmmss") + ".xml");
