@@ -1,4 +1,5 @@
-﻿using ShowRoomForm.Repositories;
+﻿using ShowRoomForm.Entities;
+using ShowRoomForm.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,16 +29,46 @@ namespace ShowRoomForm.ViewModels
         {
             _roomRepository = roomRepository;
 
-            foreach (var entity in _roomRepository.GetRooms())
+            foreach (var entity in _roomRepository.GetLatestRooms())
             {
-                // 表示用のルームリスト
-                Rooms.Add(new Room(entity));
+                // 表示用のメンバーリスト
+                Members.Add(entity);
             }
         }
 
         #region viewでバインドするプロパティ
 
+        public BindingList<RoomEntity> Members { get; set; } = new BindingList<RoomEntity>();
+
         public BindingList<Room> Rooms { get; set; } = new BindingList<Room>();
+
+        public BindingList<RoomEntity> RoomsData { get; set; } = new BindingList<RoomEntity>();
+
+        #endregion
+
+        #region method
+
+        public void ShowRoomGridView(int roomId)
+        {
+            Rooms.Clear();
+
+            foreach (var entity in _roomRepository.GetRooms(roomId).OrderByDescending(r => r.DataDateTime))
+            {
+                // グリッド用のルームリスト
+                Rooms.Add(new Room(entity));
+            }
+        }
+
+        public void ShowChart(int roomId)
+        {
+            RoomsData.Clear();
+
+            foreach (var entity in _roomRepository.GetRooms(roomId).OrderByDescending(r => r.DataDateTime))
+            {
+                // チャート用ルームリスト
+                RoomsData.Add(entity);
+            }
+        }
 
         #endregion
     }

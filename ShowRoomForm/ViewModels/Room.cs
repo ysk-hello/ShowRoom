@@ -17,6 +17,8 @@ namespace ShowRoomForm.ViewModels
 
         public string Name => _entity.Name;
 
+        public string DispDataDateTime => _entity.DataDateTime.ToShortDateString();
+
         public int FollowerNum => _entity.FollowerNum;
     }
 }

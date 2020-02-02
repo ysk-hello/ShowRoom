@@ -15,12 +15,14 @@ namespace ShowRoomForm.Entities
         /// コンストラクタです。
         /// </summary>
         /// <param name="id">ルームId</param>
+        /// <param name="dateTime">データ日時</param>
         /// <param name="name">ルーム名</param>
         /// <param name="key">ルームURLキー</param>
         /// <param name="num">フォロワー数</param>
-        public RoomEntity(int id, string name, string key, int num)
+        public RoomEntity(int id, DateTime dateTime, string name, string key, int num)
         {
             Id = id;
+            DataDateTime = dateTime;
             Name = name;
             URLKey = key;
             FollowerNum = num;
@@ -30,6 +32,11 @@ namespace ShowRoomForm.Entities
         /// ルームIdです。
         /// </summary>
         public int Id { get; }
+
+        /// <summary>
+        /// データの日時です。
+        /// </summary>
+        public DateTime DataDateTime { get; }
 
         /// <summary>
         /// ルーム名です。

@@ -19,9 +19,9 @@ namespace ShowRoomFormTests
             var mock = new Mock<IRoomRepository>();
 
             var entities = new List<RoomEntity>();
-            entities.Add(new RoomEntity(1, "test01", "test1", 1000));
-            entities.Add(new RoomEntity(2, "test02", "test2", 2000));
-            entities.Add(new RoomEntity(3, "test03", "test3", 3000));
+            entities.Add(new RoomEntity(1, DateTime.Now, "test01", "test1", 1000));
+            entities.Add(new RoomEntity(2, DateTime.Now, "test02", "test2", 2000));
+            entities.Add(new RoomEntity(3, DateTime.Now, "test03", "test3", 3000));
 
             mock.Setup(m => m.GetRooms()).Returns(entities);
 
