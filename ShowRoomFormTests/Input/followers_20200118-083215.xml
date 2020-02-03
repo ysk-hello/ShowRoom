@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Rooms>
+  <Room>
+    <Id>97189</Id>
+    <UrlKey>48_ISHIDA_CHIHO</UrlKey>
+    <Name>石田 千穂（STU48）</Name>
+    <FollowerNum>22021</FollowerNum>
+  </Room>
+  <Room>
+    <Id>97169</Id>
+    <UrlKey>48_IMAMURA_MITSUKI</UrlKey>
+    <Name>今村 美月（STU48）</Name>
+    <FollowerNum>18940</FollowerNum>
+  </Room>
+  <Room>
+    <Id>97212</Id>
+    <UrlKey>48_FUKUDA_AKARI</UrlKey>
+    <Name>福田 朱里（STU48）</Name>
+    <FollowerNum>16554</FollowerNum>
+  </Room>
+  <Room>
+    <Id>97441</Id>
+    <UrlKey>48_ISOGAI_KANON</UrlKey>
+    <Name>磯貝 花音（STU48）</Name>
+    <FollowerNum>14460</FollowerNum>
+  </Room>
+  <Room>
+    <Id>97172</Id>
+    <UrlKey>48_MINEYOSHI_ARISA</UrlKey>
+    <Name>峯吉 愛梨沙（STU48）</Name>
+    <FollowerNum>10606</FollowerNum>
+  </Room>
+  <Room>
+    <Id>97194</Id>
+    <UrlKey>48_SAKAKI_MIYU</UrlKey>
+    <Name>榊 美優（STU48）</Name>
+    <FollowerNum>9544</FollowerNum>
+  </Room>
+  <Room>
+    <Id>97176</Id>
+    <UrlKey>48_TAKINO_YUMIKO</UrlKey>
+    <Name>瀧野 由美子（STU48）</Name>
+    <FollowerNum>37601</FollowerNum>
+  </Room>
+  <Room>
+    <Id>97192</Id>
+    <UrlKey>48_KAI_KOKOA</UrlKey>
+    <Name>甲斐 心愛（STU48）</Name>
+    <FollowerNum>12863</FollowerNum>
+  </Room>
+  <Room>
+    <Id>97165</Id>
+    <UrlKey>48_TANAKA_KOUKO</UrlKey>
+    <Name>田中 皓子（STU48）</Name>
+    <FollowerNum>12672</FollowerNum>
+  </Room>
+  <Room>
+    <Id>97429</Id>
+    <UrlKey>48_HYODO_AOI</UrlKey>
+    <Name>兵頭 葵（STU48）</Name>
+    <FollowerNum>9429</FollowerNum>
+  </Room>
+  <Room>
+    <Id>97442</Id>
+    <UrlKey>48_KADOWAKI_MIYUNA</UrlKey>
+    <Name>門脇 実優菜（STU48）</Name>
+    <FollowerNum>19964</FollowerNum>
+  </Room>
+  <Room>
+    <Id>97168</Id>
+    <UrlKey>48_YANO_HONOKA</UrlKey>
+    <Name>矢野 帆夏（STU48）</Name>
+    <FollowerNum>8957</FollowerNum>
+  </Room>
+  <Room>
+    <Id>96993</Id>
+    <UrlKey>48_MORISHITA_MAIHA</UrlKey>
+    <Name>森下 舞羽（STU48）</Name>
+    <FollowerNum>8809</FollowerNum>
+  </Room>
+  <Room>
+    <Id>97440</Id>
+    <UrlKey>48_ISHIDA_MINAMI</UrlKey>
+    <Name>石田 みなみ（STU48）</Name>
+    <FollowerNum>9953</FollowerNum>
+  </Room>
+  <Room>
+    <Id>97170</Id>
+    <UrlKey>48_SHINTANI_NONOKA</UrlKey>
+    <Name>新谷 野々花（STU48）</Name>
+    <FollowerNum>10551</FollowerNum>
+  </Room>
+  <Room>
+    <Id>99671</Id>
+    <UrlKey>48_FUJIWARA_AZUSA</UrlKey>
+    <Name>藤原 あずさ（STU48）</Name>
+    <FollowerNum>8158</FollowerNum>
+  </Room>
+  <Room>
+    <Id>97002</Id>
+    <UrlKey>48_OTANI_MARINA</UrlKey>
+    <Name>大谷 満理奈（STU48）</Name>
+    <FollowerNum>10048</FollowerNum>
+  </Room>
+  <Room>
+    <Id>146985</Id>
+    <UrlKey>48_NAKAMURA_MAI</UrlKey>
+    <Name>中村 舞（STU48 ドラフト3期生）</Name>
+    <FollowerNum>15419</FollowerNum>
+  </Room>
+  <Room>
+    <Id>99668</Id>
+    <UrlKey>48_TANIGUCHI_MAHINA</UrlKey>
+    <Name>谷口 茉妃菜（STU48）</Name>
+    <FollowerNum>6806</FollowerNum>
+  </Room>
+  <Room>
+    <Id>146900</Id>
+    <UrlKey>48_OKI_YUKA</UrlKey>
+    <Name>沖 侑果（STU48 ドラフト3期生）</Name>
+    <FollowerNum>14029</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270164</Id>
+    <UrlKey>48_IMAIZUMI_MIRIA</UrlKey>
+    <Name>今泉 美利愛（STU48 2期研究生）</Name>
+    <FollowerNum>2462</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270195</Id>
+    <UrlKey>48_IKEDA_YURA</UrlKey>
+    <Name>池田 裕楽（STU48 2期研究生）</Name>
+    <FollowerNum>1543</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270201</Id>
+    <UrlKey>48_HARADA_SAYAKA</UrlKey>
+    <Name>原田 清花（STU48 2期研究生）</Name>
+    <FollowerNum>3587</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270149</Id>
+    <UrlKey>48_YOSHIZAKI_RINKO</UrlKey>
+    <Name>吉崎 凜子（STU48 2期研究生）</Name>
+    <FollowerNum>2771</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270154</Id>
+    <UrlKey>48_RISSEN_MOMOKA</UrlKey>
+    <Name>立仙 百佳（STU48 2期研究生）</Name>
+    <FollowerNum>4136</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270192</Id>
+    <UrlKey>48_SUZUKI_AYAKA</UrlKey>
+    <Name>鈴木 彩夏（STU48 2期研究生）</Name>
+    <FollowerNum>2504</FollowerNum>
+  </Room>
+  <Room>
+    <Id>147003</Id>
+    <UrlKey>48_SHINANO_SORAHA</UrlKey>
+    <Name>信濃 宙花（STU48 ドラフト3期生）</Name>
+    <FollowerNum>6788</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270125</Id>
+    <UrlKey>48_UTSUMI_RINE</UrlKey>
+    <Name>内海 里音（STU48 2期研究生）</Name>
+    <FollowerNum>2572</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270200</Id>
+    <UrlKey>48_KUDO_RIKO</UrlKey>
+    <Name>工藤 理子（STU48 2期研究生）</Name>
+    <FollowerNum>2787</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270117</Id>
+    <UrlKey>48_KOJIMA_AIKO</UrlKey>
+    <Name>小島 愛子（STU48 2期研究生）</Name>
+    <FollowerNum>2568</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270173</Id>
+    <UrlKey>48_TAMURA_NATSUKI</UrlKey>
+    <Name>田村 菜月（STU48 2期研究生）</Name>
+    <FollowerNum>2434</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270165</Id>
+    <UrlKey>48_SHIMIZU_SARA</UrlKey>
+    <Name>清水 紗良（STU48 2期研究生）</Name>
+    <FollowerNum>3066</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270205</Id>
+    <UrlKey>48_MUNEYUKI_RIKA</UrlKey>
+    <Name>宗雪 里香（STU48 2期研究生）</Name>
+    <FollowerNum>2865</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270156</Id>
+    <UrlKey>48_TANAKA_MIHO</UrlKey>
+    <Name>田中 美帆（STU48 2期研究生）</Name>
+    <FollowerNum>2994</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270161</Id>
+    <UrlKey>48_YOSHIDA_SARA</UrlKey>
+    <Name>吉田 彩良（STU48 2期研究生）</Name>
+    <FollowerNum>2685</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270148</Id>
+    <UrlKey>48_KAWAMATA_YUUNA</UrlKey>
+    <Name>川又 優菜（STU48 2期研究生）</Name>
+    <FollowerNum>1788</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270186</Id>
+    <UrlKey>48_TAKAO_SAYAKA</UrlKey>
+    <Name>高雄 さやか（STU48 2期研究生）</Name>
+    <FollowerNum>4788</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270159</Id>
+    <UrlKey>48_TAGUCHI_REIKA</UrlKey>
+    <Name>田口 玲佳（STU48 2期研究生）</Name>
+    <FollowerNum>2339</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270124</Id>
+    <UrlKey>48_NAKAHIRO_YAYOI</UrlKey>
+    <Name>中廣 弥生（STU48 2期研究生）</Name>
+    <FollowerNum>2229</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270198</Id>
+    <UrlKey>48_WATANABE_NATSUKI</UrlKey>
+    <Name>渡辺 菜月（STU48 2期研究生）</Name>
+    <FollowerNum>2219</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270106</Id>
+    <UrlKey>48_SAKO_HIMEKA</UrlKey>
+    <Name>迫 姫華（STU48 2期研究生）</Name>
+    <FollowerNum>2154</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270151</Id>
+    <UrlKey>48_KAWAMATA_ANNA</UrlKey>
+    <Name>川又 あん奈（STU48 2期研究生）</Name>
+    <FollowerNum>2652</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270187</Id>
+    <UrlKey>48_MINAMI_YURINA</UrlKey>
+    <Name>南 有梨菜（STU48 2期研究生）</Name>
+    <FollowerNum>2722</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270132</Id>
+    <UrlKey>48_OSAKI_SERIKA</UrlKey>
+    <Name>尾崎 世里花（STU48 2期研究生）</Name>
+    <FollowerNum>2493</FollowerNum>
+  </Room>
+  <Room>
+    <Id>270210</Id>
+    <UrlKey>48_KONDO_ARISU</UrlKey>
+    <Name>近藤 ありす（STU48 2期研究生）</Name>
+    <FollowerNum>2217</FollowerNum>
+  </Room>
+</Rooms>

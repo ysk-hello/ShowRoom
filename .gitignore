@@ -3,3 +3,14 @@ ShowRoomConsole/obj/
 .vs/
 ShowRoomConsoleTests/bin/
 ShowRoomConsoleTests/obj/
+ShowRoomTweetTests/appsettings.json
+ShowRoomTweetTests/bin/
+ShowRoomTweetTests/obj/
+ShowRoomTweet/bin/
+ShowRoomTweet/obj/
+ShowRoomConsole/appsettings.json
+packages/
+ShowRoomForm/bin/
+ShowRoomForm/obj/
+ShowRoomFormTests/bin/
+ShowRoomFormTests/obj/

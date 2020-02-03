@@ -38,6 +38,13 @@ namespace ShowRoomConsole.IO
                 xdoc = new XDocument(x);
             }
 
+            var dirPath = Path.GetDirectoryName(filePath);
+            if (!string.IsNullOrWhiteSpace(dirPath))
+            {
+                // ディレクトリを作成する
+                Directory.CreateDirectory(dirPath);
+            }
+
             // ファイルに保存する
             xdoc.Save(filePath);
         }
