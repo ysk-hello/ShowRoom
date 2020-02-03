@@ -31,12 +31,34 @@ namespace ShowRoomForm
             chart1.Series[0].YValueMembers = nameof(RoomEntity.FollowerNum);
         }
 
+        private void UpdateDataGridViewCellColor(DataGridView dataGridView)
+        {
+            foreach(DataGridViewRow row in dataGridView.Rows)
+            {
+                var room = row.DataBoundItem as Room;
+
+                if(room.ChangeFromPreviousDay > 0)
+                {
+                    // 増加の場合
+                    row.Cells["ChangeFromPreviousDay"].Style.BackColor = Color.LightPink;
+                }
+                else if(room.ChangeFromPreviousDay < 0)
+                {
+                    // 減少の場合
+                    row.Cells["ChangeFromPreviousDay"].Style.BackColor = Color.LightBlue;
+                }
+            }
+        }
+
         private void showButton_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Debug.WriteLine(memberComboBox.SelectedValue);
 
             // datagridview表示
             _viewModel.ShowRoomGridView(Convert.ToInt32(memberComboBox.SelectedValue));
+
+            // datagridviewのセルの色を変える
+            UpdateDataGridViewCellColor(roomGridView);
 
             // chart表示
             _viewModel.ShowChart(Convert.ToInt32(memberComboBox.SelectedValue));

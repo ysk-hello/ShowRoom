@@ -52,10 +52,24 @@ namespace ShowRoomForm.ViewModels
         {
             Rooms.Clear();
 
-            foreach (var entity in _roomRepository.GetRooms(roomId).OrderByDescending(r => r.DataDateTime))
+            // 日時(降順)で並べる
+            var entities = _roomRepository.GetRooms(roomId).OrderByDescending(r => r.DataDateTime).ToList();
+
+            for (int i = 0; i < entities.Count(); i++)
             {
-                // グリッド用のルームリスト
-                Rooms.Add(new Room(entity));
+                if (i == entities.Count() - 1)
+                {
+                    // 前日のデータがない場合
+
+                    Rooms.Add(new Room(entities[i], 0));
+                }
+                else
+                {
+                    // 前日のデータがある場合
+
+                    // グリッド用のルームリスト
+                    Rooms.Add(new Room(entities[i], entities[i + 1].FollowerNum));
+                }
             }
         }
 
