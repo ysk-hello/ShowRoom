@@ -44,6 +44,10 @@ namespace ShowRoomForm.ViewModels
 
         public BindingList<RoomEntity> RoomsData { get; set; } = new BindingList<RoomEntity>();
 
+        public DateTime StartDate { get; set; } = DateTime.Today.AddDays(-10);
+
+        public DateTime EndDate { get; set; } = DateTime.Today;
+
         #endregion
 
         #region method
@@ -53,7 +57,7 @@ namespace ShowRoomForm.ViewModels
             Rooms.Clear();
 
             // 日時(降順)で並べる
-            var entities = _roomRepository.GetRooms(roomId).OrderByDescending(r => r.DataDateTime).ToList();
+            var entities = _roomRepository.GetRooms(roomId, StartDate, EndDate).OrderByDescending(r => r.DataDateTime).ToList();
 
             for (int i = 0; i < entities.Count(); i++)
             {
@@ -77,7 +81,7 @@ namespace ShowRoomForm.ViewModels
         {
             RoomsData.Clear();
 
-            foreach (var entity in _roomRepository.GetRooms(roomId).OrderByDescending(r => r.DataDateTime))
+            foreach (var entity in _roomRepository.GetRooms(roomId, StartDate, EndDate).OrderByDescending(r => r.DataDateTime))
             {
                 // チャート用ルームリスト
                 RoomsData.Add(entity);

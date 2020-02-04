@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\RoomEntity.cs" />
+    <Compile Include="Helper\Guard.cs" />
     <Compile Include="MainView.cs">
       <SubType>Form</SubType>
     </Compile>

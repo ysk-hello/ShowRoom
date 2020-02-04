@@ -15,6 +15,8 @@ namespace ShowRoomForm.Repositories
 
         IReadOnlyList<RoomEntity> GetRooms(int roomId);
 
+        IReadOnlyList<RoomEntity> GetRooms(int roomId, DateTime start, DateTime end);
+
         IReadOnlyList<RoomEntity> GetRooms(string fileName);
     }
 }

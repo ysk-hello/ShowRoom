@@ -35,14 +35,14 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.roomGridView = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.memberComboBox = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.startDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.endDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.showButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.roomGridView)).BeginInit();
@@ -96,6 +96,24 @@
             this.tabPage2.Text = "chart";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(3, 3);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(642, 409);
+            this.chart1.TabIndex = 0;
+            this.chart1.Text = "chart1";
+            // 
             // memberComboBox
             // 
             this.memberComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -105,23 +123,28 @@
             this.memberComboBox.Size = new System.Drawing.Size(188, 20);
             this.memberComboBox.TabIndex = 1;
             // 
-            // dateTimePicker1
+            // startDateTimePicker
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(362, 12);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(141, 19);
-            this.dateTimePicker1.TabIndex = 2;
+            this.startDateTimePicker.Location = new System.Drawing.Point(362, 12);
+            this.startDateTimePicker.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.startDateTimePicker.Name = "startDateTimePicker";
+            this.startDateTimePicker.Size = new System.Drawing.Size(141, 19);
+            this.startDateTimePicker.TabIndex = 2;
+            this.startDateTimePicker.Value = new System.DateTime(2020, 2, 5, 0, 0, 0, 0);
             // 
-            // dateTimePicker2
+            // endDateTimePicker
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(362, 41);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(141, 19);
-            this.dateTimePicker2.TabIndex = 3;
+            this.endDateTimePicker.CustomFormat = "";
+            this.endDateTimePicker.Location = new System.Drawing.Point(362, 41);
+            this.endDateTimePicker.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.endDateTimePicker.Name = "endDateTimePicker";
+            this.endDateTimePicker.Size = new System.Drawing.Size(141, 19);
+            this.endDateTimePicker.TabIndex = 3;
+            this.endDateTimePicker.Value = new System.DateTime(2020, 2, 5, 1, 12, 36, 0);
             // 
             // showButton
             // 
-            this.showButton.Location = new System.Drawing.Point(575, 41);
+            this.showButton.Location = new System.Drawing.Point(547, 41);
             this.showButton.Name = "showButton";
             this.showButton.Size = new System.Drawing.Size(75, 23);
             this.showButton.TabIndex = 4;
@@ -156,24 +179,6 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "end";
             // 
-            // chart1
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(3, 3);
-            this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(642, 409);
-            this.chart1.TabIndex = 0;
-            this.chart1.Text = "chart1";
-            // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -183,8 +188,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.showButton);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.endDateTimePicker);
+            this.Controls.Add(this.startDateTimePicker);
             this.Controls.Add(this.memberComboBox);
             this.Controls.Add(this.tabControl1);
             this.Name = "MainView";
@@ -206,8 +211,8 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataGridView roomGridView;
         private System.Windows.Forms.ComboBox memberComboBox;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker startDateTimePicker;
+        private System.Windows.Forms.DateTimePicker endDateTimePicker;
         private System.Windows.Forms.Button showButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

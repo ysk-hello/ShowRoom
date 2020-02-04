@@ -64,6 +64,11 @@ namespace ShowRoomForm.Repositories
             return GetRooms().Where(r => r.Id == roomId).ToList();
         }
 
+        public IReadOnlyList<RoomEntity> GetRooms(int roomId, DateTime start, DateTime end)
+        {
+            return GetRooms().Where(r => r.Id == roomId).Where(r => start <= r.DataDateTime.Date && r.DataDateTime.Date <= end).ToList();
+        }
+
         public IReadOnlyList<RoomEntity> GetRooms(string filePath)
         {
             // xmlを読み込み

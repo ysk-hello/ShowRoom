@@ -1,4 +1,5 @@
 ﻿using ShowRoomForm.Entities;
+using ShowRoomForm.Helper;
 using ShowRoomForm.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,11 @@ namespace ShowRoomForm
             memberComboBox.DataBindings.Add("DataSource", _viewModel, nameof(_viewModel.Members));
             memberComboBox.ValueMember = nameof(RoomEntity.Id);
             memberComboBox.DisplayMember = nameof(RoomEntity.Name);
+
+            startDateTimePicker.DataBindings.Add("Value", _viewModel, nameof(_viewModel.StartDate));
+            startDateTimePicker.MaxDate = DateTime.Today;
+            endDateTimePicker.DataBindings.Add("Value", _viewModel, nameof(_viewModel.EndDate));
+            endDateTimePicker.MaxDate = DateTime.Today;
 
             roomGridView.DataBindings.Add("DataSource", _viewModel, nameof(_viewModel.Rooms));
 
@@ -52,6 +58,16 @@ namespace ShowRoomForm
 
         private void showButton_Click(object sender, EventArgs e)
         {
+            try
+            {
+                // 日付のチェック
+                startDateTimePicker.Value.Before(endDateTimePicker.Value);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
             System.Diagnostics.Debug.WriteLine(memberComboBox.SelectedValue);
 
             // datagridview表示
